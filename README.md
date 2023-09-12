@@ -17,6 +17,5 @@ Wisdom has a multitude of cool features! Here are just a few:
 - [🚗] Autorole
 - [🧩] Fun Commands
 - [👤] User Profiles
-- [🎱] Many other Utility Features!
-
+- [🎱] Many other Utility Features!      
 On top of these other features, Wisdom also has a Suggestion System, a full Embed Builder, Purge, and so many more features!

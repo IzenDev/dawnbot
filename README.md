@@ -7,7 +7,7 @@ Wisdom is a multipurpose Discord solution that adds a bunch of utility features 
 If you would like to, invite Wisdom [**HERE**](https://dsc.gg/wisdombot)
 
 ## Other Links
-Support Server [**HERE**](https://discord.gg/Nm6VqHuPnu)
+- Support Server [**HERE**](https://discord.gg/Nm6VqHuPnu)
 
 ## Features
 Wisdom has a multitude of cool features! Here are just a few:
@@ -18,4 +18,5 @@ Wisdom has a multitude of cool features! Here are just a few:
 - [🧩] Fun Commands
 - [👤] User Profiles
 - [🎱] Many other Utility Features!
+
 On top of these other features, Wisdom also has a Suggestion System, a full Embed Builder, Purge, and so many more features!

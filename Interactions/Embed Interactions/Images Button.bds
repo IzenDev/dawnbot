@@ -1,0 +1,5 @@
+$nomention
+$newModal[images-modal.embedbuilder;Image Settings]
+$addTextInput[images-modal.image.embedbuilder;short;Embed Image;1;500;no;;The Main Image for the Embed (Use an Image URL)]
+$addTextInput[images-modal.thumbnail.embedbuilder;short;Embed Thumbnail;1;500;no;;The Thumbnail for the Embed (Use an Image URL)]
+

@@ -1,0 +1,10 @@
+$nomention
+$reply
+$onlyAdmin[❌ This is only for Admins]
+$argsCheck[>1;Please mention a channel!]
+$setServerVar[welcome;$mentionedChannels[1]]
+$title[Welcome Channel Set]
+$description[Welcome channel set to <#$mentionedChannels[1]>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

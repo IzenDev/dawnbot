@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyAdmin[❌ This is only for Admins]
+$setServerVar[ticketping;]
+$title[Staff Update]
+$description[The set staff role has been reset and removed.]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

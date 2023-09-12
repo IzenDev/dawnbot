@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyAdmin[❌This is only for Admins.]
+$roleGrant[$mentioned[1];+$mentionedRoles[1]]
+$title[Role Added]
+$description[The role <@&$mentionedRoles[1]> have been added to <@$mentioned[1]>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

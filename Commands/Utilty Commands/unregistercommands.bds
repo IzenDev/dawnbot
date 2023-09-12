@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyAdmin[:x: This is only for Admins.]
+$unregisterGuildCommands
+$title[Commands Unregistered]
+$description[<@$authorID> has unregistered guild slash commands.]
+$color[#e05632]
+$footer[Wisdom - A multipurpose utility bot.]
+$footerIcon[https://cdn.discordapp.com/attachments/1142195573638844575/1146279850575937586/widsombotNEW.png]

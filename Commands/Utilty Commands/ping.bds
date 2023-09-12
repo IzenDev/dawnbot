@@ -1,0 +1,7 @@
+$nomention
+$reply
+$title[Pong 🏓]
+$description[:link: **Bot Ping:** `$pingms`]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

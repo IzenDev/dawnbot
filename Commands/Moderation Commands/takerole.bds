@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyPerms[manageroles;❌This is only for Staff.]
+$takeRole[$mentionedRoles[<]]
+$title[Role Taken]
+$description[ The role <@&$mentionedRoles[1]> have been removed from <@$mentioned[1]>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

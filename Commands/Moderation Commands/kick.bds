@@ -1,0 +1,10 @@
+$nomention
+$reply
+$onlyPerms[kick;❌This is only for Staff.]
+
+$kickMention[]
+$title[User Kicked]
+$description[<@$mentioned[1]> has been kicked from the server!]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

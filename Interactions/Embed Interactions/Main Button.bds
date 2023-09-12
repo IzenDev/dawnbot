@@ -1,0 +1,6 @@
+$nomention
+$newModal[main-modal.embedbuilder;Main Settings]
+$addTextInput[main-modal.title.embedbuilder;short;Embed Title;1;150;yes;;The title for the Embed.]
+$addTextInput[main-modal.color.embedbuilder;short;Embed Color;1;150;yes;;The embeds color (Use ?colors for a list of possible colors.)]
+$addTextInput[main-modal.description.embedbuilder;paragraph;Embed Content;1;4000;yes;;What would you like your embed to say?]
+

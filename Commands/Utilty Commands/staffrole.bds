@@ -1,0 +1,10 @@
+$nomention
+$reply
+$onlyAdmin[❌ This is only for Admins]
+$setServerVar[ticketping;$mentionedRoles[1]]
+$argsCheck[>1;❌ Please @ a role!]
+$title[Staff Update]
+$description[The Staff roles have been set to $roleName[$mentionedRoles[1]]]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

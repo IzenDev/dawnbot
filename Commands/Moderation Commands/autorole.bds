@@ -1,0 +1,10 @@
+$nomention
+$reply
+$onlyAdmin[:x: This is only for Admins]
+$setServerVar[autorole;$mentionedRoles[1]]
+$argsCheck[>1;❌ Please mention a role!]
+$title[Autorole Enabled]
+$description[Autorole set to <@&$getServerVar[autorole]>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

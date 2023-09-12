@@ -1,0 +1,11 @@
+$nomention
+$defer
+$onlyAdmin[❌ This is only for Admins.]
+$deletecommand
+$argsCheck[>1;Please provide a number of messages to delete! Use `?purge <1-100>`]
+$clear
+$title[Message Purge]
+$description[<@$authorID> purged $message messages!]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

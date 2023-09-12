@@ -1,0 +1,5 @@
+$nomention
+$reply
+$argsCheck[1>;:x: Please mention a Number! 
+`?code (1-10)`]
+🔑 Your random code is: `$randomString[$message]`

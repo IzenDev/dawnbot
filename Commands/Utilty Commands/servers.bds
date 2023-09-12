@@ -1,0 +1,32 @@
+$nomention
+$reply
+$defer
+$if[$authorID!=$botOwnerID]
+     $title[Wisdom Server Count]
+     $color[$getVar[wisdom.color]]
+     $footer[$getVar[wisdom.footer]]
+     $footerIcon[$getVar[wisdom.footer.icon]]
+     $description[**I am in $serverCount Servers**
+
+     Only the Bot Owner (<@$botOwnerID>) can view what servers I am in.]
+
+$elseif[$authorID==$botOwnerID]
+     $sendMessage[:x: Please be patient! This command can take some time!;no]
+     $botTyping
+
+     $replyIn[7s]
+     $title[Wisdom Server List]
+     $description[
+     **I am in $serverCount Servers!**
+
+     Here are the names of the servers:
+
+     ```$serverNames[-1;, 
+     ]```]
+     $color[$getVar[wisdom.color]]
+     $footer[$getVar[wisdom.footer]]
+     $footerIcon[$getVar[wisdom.footer.icon]]
+$endif
+
+
+

@@ -1,0 +1,8 @@
+$nomention
+$ephemeral
+$embedSuppressErrors[Missing Permissions;;$getVar[wisdom.color];;$getVar[wisdom.footer];$getVar[wisdom.footer.icon]]
+$onlyForIDs[$getUserVar[ticket.creator];Only the creator of the ticket are allowed to use this. (Staff can still just delete the Ticket)]
+$editChannelPerms[$channelID;$authorID;-sendmessages;+readmessages]
+$sendEmbedMessage[$channelID;;Ticket Closed;;<@$authorID> closed the ticket.;#e05632;;;Wisdom - A multipurpose utility bot.;https://cdn.discordapp.com/attachments/1142195573638844575/1146279850575937586/widsombotNEW.png;;;yes;no]
+$setUserVar[ticket.creator;]
+

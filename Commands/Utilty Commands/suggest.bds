@@ -1,0 +1,16 @@
+$nomention
+$cooldown[10m;:x: Please wait `%time%` before making another suggestion!]
+
+$var[suggestion;$sendEmbedMessage[$getServerVar[suggestion.channel];;New Suggestion by $username[$authorID];;A new suggestion has been made by <@$authorID>:
+
+`$message`
+
+;$getVar[wisdom.color];$username[$authorID];$userAvatar[$authorID];$getVar[wisdom.footer];$getVar[wisdom.footer.icon];;;yes;yes]]
+$addMessageReactions[$getServerVar[suggestion.channel];$var[suggestion];✅;❌]
+
+$reply
+$title[Suggestion Made]
+$description[Your suggestion has been made in <#$getServerVar[suggestion.channel]>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

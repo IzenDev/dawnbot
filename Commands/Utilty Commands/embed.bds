@@ -1,0 +1,18 @@
+$nomention
+$reply
+$onlyAdmin[❌ This is only for Admins!]
+
+$title[Wisdom Embed Builder]
+$description[Use the button below to start building your embed:
+
+**PRESSING "NEW EMBED" OVERWRITES YOUR PREVIOUS ONE!**]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$addButton[no;main-button.embedbuilder;Main;secondary;no;⛑️]
+$addButton[no;author-button.embedbuilder;Authors;secondary;no;✍️]
+$addButton[no;footer-button.embedbuilder;Footers;secondary;no;👣]
+$addButton[no;images-button.embedbuilder;Images;secondary;no;🖼️]
+
+$addButton[yes;new-embed-button.embedbuilder;New Embed;danger;no;🚧]
+$addButton[no;send-embed-button.embedbuilder;Send Embed;success;no;📩]

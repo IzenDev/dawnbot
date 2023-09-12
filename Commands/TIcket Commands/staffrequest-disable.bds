@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyAdmin[:x: This is only for Admins.]
+$setServerVar[staff.request.status;1]
+$title[Ticket Changes]
+$description[You have disabled staff ticket pings!]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]

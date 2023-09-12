@@ -1,0 +1,8 @@
+$nomention
+$reply
+$title[Server Icon]
+$description[Here is the server icon for **$serverName[$guildID]**]
+$serverIcon[$guildID]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

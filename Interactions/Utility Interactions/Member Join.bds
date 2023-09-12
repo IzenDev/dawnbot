@@ -1,0 +1,9 @@
+$nomention
+$suppressErrors
+$sendEmbedMessage[$getServerVar[welcome];;New Member Joined;;Hey <@$authorID>! 
+($username[$authorID])
+
+Welcome to **$serverName[$guildID]**
+
+There are now **$membersCount** members!;#90EE90;;;$username Joined;https://cdn.discordapp.com/attachments/1128388032286969856/1141835050875371670/6700-member.png;$userAvatar[$mentioned[1;yes]];;yes;no]
+$roleGrant[$authorID;+$getServerVar[autorole]]

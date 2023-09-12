@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyPerms[managechannels;:x: This is only for Staff.]
+$editChannelPerms[$channelID;$guildID;-sendmessages]
+$title[Channel Locked]
+$description[🔒 You have locked <#$channelID>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

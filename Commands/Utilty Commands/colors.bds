@@ -1,0 +1,23 @@
+$nomention
+$reply
+$title[Possible Color List]
+$description[Here is a list of possible colors that you can use for Wisdom:
+`red`
+`orange`
+`yellow`
+`lime`
+`green`
+`aqua`
+`light-blue`
+`blue`
+`purple`
+`pink`
+`white`
+
+*Please use the color codes exactly as they are written, or they may fail*
+
+]
+
+$color[$getUserVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

@@ -1,0 +1,4 @@
+$nomention
+$reply
+$setServerVar[mcserverip;$input[serverip.input]]
+$sendMessage[✅ The server IP has been set to `$getServerVar[mcserverip]`]

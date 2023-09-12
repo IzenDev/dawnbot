@@ -1,0 +1,12 @@
+$nomention
+$reply
+$argsCheck[>1;:x: Please provide a prompt!]
+$title[Web Search]
+$description[
+<@$authorID> made a web search.
+
+https://google.com/search?q=$message
+]
+$footer[$getVar[wisdom.footer]]
+$color[$getVar[wisdom.color]]
+$footerIcon[$getVar[wisdom.footer.icon]]

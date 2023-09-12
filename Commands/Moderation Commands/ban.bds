@@ -1,0 +1,18 @@
+$nomention
+$reply
+$onlyPerms[ban;❌This is only for Staff.]
+$argsCheck[1>;:x: Please mention a user to ban!]
+$if[$username==$isBanned[$mentioned[1]]]
+    $title[Error]
+    $description[ This user is not banned or is already banned!]
+    $color[$getVar[wisdom.color]]
+    $footer[$getVar[wisdom.footer]]
+    $footerIcon[$getVar[wisdom.footer.icon]]
+$else
+     $ban[$mentioned[1]]
+     $title[User Banned]
+     $description[ <@$mentioned[1]> has been banned from $serverName[$guildID]]
+     $color[$getVar[wisdom.color]]
+     $footer[$getVar[wisdom.footer]]
+     $footerIcon[$getVar[wisdom.footer.icon]]
+$endif

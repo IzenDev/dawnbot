@@ -1,0 +1,46 @@
+$nomention
+$defer
+$ephemeral
+
+$nomention
+$defer
+$if[$getServerVar[embed.title]==]
+    $ephemeral
+    :x: The Embed is not fully finished! Cannot send it!
+    $removeButtons
+
+$else
+$title[Embed Updated]
+$description[✅ You have updated your Embed!]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$endif
+
+$setServerVar[embed.title;$input[main-modal.title.embedbuilder]]
+$setServerVar[embed.color;$input[main-modal.color.embedbuilder]]
+$setServerVar[embed.description;$input[main-modal.description.embedbuilder]]
+
+$if[$getServerVar[embed.color]==red]
+     $setServerVar[userColor;$replaceText[#ff0000;red;#ff0000]]
+$elseif[$getServerVar[embed.color]==orange]
+     $setServerVar[userColor;$replaceText[#ff8000;orange;#ff8000]]
+$elseif[$getServerVar[embed.color]==yellow]
+     $setServerVar[userColor;$replaceText[#ffff00;yellow;#ffff00]]
+$elseif[$getServerVar[embed.color]==lime]
+     $setServerVar[userColor;$replaceText[#32CD32;lime;#32CD32]]
+$elseif[$getServerVar[embed.color]==green]
+     $setServerVar[userColor;$replaceText[#008000;green;#008000]]
+$elseif[$getServerVar[embed.color]==aqua]
+     $setServerVar[userColor;$replaceText[#00ffff;aqua;#00ffff]]
+$elseif[$getServerVar[embed.color]==light-blue]
+     $setServerVar[userColor;$replaceText[#0080ff;light-blue;#0080ff]]
+$elseif[$getServerVar[embed.color]==blue]
+     $setServerVar[userColor;$replaceText[#0000ff;blue;#0000ff]]
+$elseif[$getServerVar[embed.color]==purple]
+     $setServerVar[userColor;$replaceText[#8000ff;purple;#8000ff]]
+$elseif[$getServerVar[embed.color]==pink]
+     $setServerVar[userColor;$replaceText[#ff00ff;pink;#ff00ff]]
+$elseif[$getServerVar[embed.color]==white]
+     $setServerVar[userColor;$replaceText[#FFFFFF;white;#FFFFFF]]
+$endif

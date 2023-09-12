@@ -1,0 +1,6 @@
+$nomention
+$embedSuppressErrors[Error;;$getVar[wisdom.color];;$getVar[wisdom.footer];$getVar[wisdom.footer.icon]]
+$onlyForIDs[$botOwnerID;You are not allowed to use this command. Only <@$botOwnerID> is!]
+$deletecommand
+$allowMention
+$message

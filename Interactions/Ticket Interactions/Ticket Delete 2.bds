@@ -1,0 +1,8 @@
+$nomention
+$botTyping
+$sendMessage[🔒 Closing Ticket & Saving Logs.;no]
+$botTyping
+$sendMessage[🏗️ Working...;no]
+$botTyping
+$replyIn[2s]
+$sendMessage[⛔ Deleting Channel;no]

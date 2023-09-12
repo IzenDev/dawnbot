@@ -1,0 +1,15 @@
+$nomention
+$ephemeral
+
+$embedSuppressErrors[Missing Permissions;;$getVar[wisdom.color];;$getVar[wisdom.footer];$getVar[wisdom.footer.icon]]
+$onlyPerms[managemessages;Only staff are allowed to use this!]
+
+$title[Manage Ticket]
+$description[**$username** - How would you like to manage this ticket?]
+$color[#e05632]
+$footer[Wisdom - A multipurpose utility bot]
+$footerIcon[https://cdn.discordapp.com/attachments/1142195573638844575/1146279850575937586/widsombotNEW.png]
+$removeButtons
+
+$addButton[no;ticket.delete;Delete;secondary;no;:x:;]
+$addButton[no;ticket.logs;Logs;secondary;no;:scroll:;]

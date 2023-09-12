@@ -1,0 +1,3 @@
+$nomention
+$onlyForIDs[$botOwnerID;:x: You cannot run this command!]
+$setVar[wisdom.footer;$message]

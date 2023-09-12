@@ -1,0 +1,35 @@
+$nomention
+$defer
+$var[rand;$random[1;100]]
+$async[create]
+$createChannel[ticket-$var[rand];text;$parentID]
+$endasync
+$await[create]
+$var[channel;$channelID[ticket-$var[rand]]]
+$modifyChannel[$var[channel];ticket-$username-$random[1;99]]
+$useChannel[$var[channel]]
+$setUserVar[ticket.creator;$authorID]
+$var[msg;$sendEmbedMessage[$var[channel];;$username's Ticket;;Channel ID: $var[channel]
+
+User ID: $authorID
+
+**Welcome to your Ticket <@$authorID>**
+Please include as many details as you can on your issue so we can better assist you. 
+
+If you are waiting, and are getting no response, please use the "Request Staff" button to call us!
+;#e05632;;;Wisdom - A mulitpurpose utility bot.;https://cdn.discordapp.com/attachments/1142195573638844575/1146279850575937586/widsombotNEW.png;;;yes;yes]]
+
+$async[buttons]
+$pinMessage[$var[channel];$var[msg]]
+$addButton[no;ticket.staffpanel;Staff Panel;secondary;no;:tv:;$var[msg]]
+$addButton[no;ticket.requeststaff;Request Staff;secondary;no;:telephone:;$var[msg]]
+$addButton[no;ticket.user.close;Close Ticket;danger;no;:x:;$var[msg]]
+$endasync
+
+$await[buttons]
+$nomention
+$ephemeral 
+$removeButtons
+$title[$username - Ticket Created]
+$color[#e05632]
+$description[Your ticket has been created in <#$var[channel]>]

@@ -1,0 +1,10 @@
+$nomention
+$reply
+$onlyAdmin[❌ This is only for Admins]
+$title[Server IP]
+$description[Enter your server IP by clicking the button below]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$addButton[no;serverip.submit;Server IP;secondary;no;:mailbox:;]
+

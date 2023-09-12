@@ -1,0 +1,12 @@
+$nomention
+$defer
+$ephemeral
+
+$setServerVar[embed.image;$input[images-modal.image.embedbuilder]]
+$setServerVar[embed.thumbnail;$input[images-modal.thumbnail.embedbuilder]]
+
+$title[Embed Updated]
+$description[✅ You have updated your Embed!]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]

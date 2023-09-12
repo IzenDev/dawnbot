@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyAdmin[:x: This is only for Admins.]
+$setServerVar[autorole;]
+$title[Auto Disabled]
+$description[✅ AutoRole has been disabled.]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

@@ -1,0 +1,11 @@
+$nomention
+$reply
+$onlyAdmin[:x: This is only for Admins.]
+$suppressErrors[:x: There was an error!]
+$argsCheck[>1;:x: Mention a channel!]
+$setServerVar[suggestion.channel;$mentionedChannels[1]]
+$title[Suggestion Channel Set]
+$description[You have set the suggestions channel to <#$getServerVar[suggestion.channel]>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

@@ -1,0 +1,13 @@
+$nomention
+$onlyAdmin[❌ This is only for Admins]
+**Bold**
+*Italic*
+~~Strikethrough~~
+
+$title[Testing Embed]
+$thumbnail[https://i.imgur.com/s2VY19Z.png]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$description[This is a testing embed used to test Wisdom. If you come by this by mistake, just ignore it and move on.]
+$addReactions[🟢;🟡;🔴]

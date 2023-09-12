@@ -1,0 +1,5 @@
+$nomention
+$defer
+$botTyping
+$replyIn[3s]
+$deleteChannels[$channelID]

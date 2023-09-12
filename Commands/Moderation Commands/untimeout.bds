@@ -1,0 +1,10 @@
+$nomention
+$reply
+$argsCheck[>1;:x: Please mention a user!]
+$onlyPerms[moderatemembers;❌ This is only for Staff.]
+$untimeout[]
+$title[User Timeout]
+$description[<@$mentioned[1]>'s timeout has been removed.]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

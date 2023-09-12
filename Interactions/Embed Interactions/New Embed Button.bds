@@ -1,0 +1,21 @@
+$nomention
+$ephemeral
+$setServerVar[embed.content;]
+$setServerVar[embed.title;]
+$setServerVar[embed.url;]
+$setServerVar[embed.description;]
+$setServerVar[embed.color;]
+$setServerVar[embed.author;]
+$setServerVar[embed.authorIcon;]
+$setServerVar[embed.footer;]
+$setServerVar[embed.footerIcon;]
+$setServerVar[embed.thumbnail;]
+$setServerVar[embed.image;]
+$setServerVar[embed.timestamp;]
+$removeButtons
+
+$title[New Embed]
+$description[You have started a new embed. All previous embed data has been erased.]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

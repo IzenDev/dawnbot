@@ -1,0 +1,7 @@
+$nomention
+$reply
+$title[Member Count - $serverName[$guildID]]
+$description[This server has **$membersCount members!**]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

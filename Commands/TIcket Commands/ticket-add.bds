@@ -1,0 +1,10 @@
+$nomention
+$reply
+$argsCheck[>1;:x: Please mention a user!]
+$onlyPerms[managemessages;❌This is only for Staff.]
+$editChannelPerms[$channelID;$mentioned[1];+readmessages;+sendmessages]
+$title[User Added]
+$description[<@$authorID> added <@$mentioned[1]> to the ticket!]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]

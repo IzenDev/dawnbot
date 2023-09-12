@@ -1,0 +1,10 @@
+$nomention
+$reply
+$onlyPerms[ban;❌This is only for Staff.]
+$argsCheck[1>;:x: Please provide the username of the user you want to unban!]
+$unban
+$title[User Unbanned]
+$description[You have unbanned $message]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

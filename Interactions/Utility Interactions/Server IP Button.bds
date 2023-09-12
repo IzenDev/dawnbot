@@ -1,0 +1,2 @@
+$newModal[serverip.modal;Server IP]
+$addTextInput[serverip.input;short;Server IP;1;100;yes;;play.example.net]

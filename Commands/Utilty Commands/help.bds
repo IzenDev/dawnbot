@@ -1,0 +1,35 @@
+$nomention
+$reply
+$title[Wisdom Help Menu]
+$description[Default Prefix: **?**
+Select an Option from the dropdown for what you need help in.
+
+🛡️ **Moderation**
+Commands related to moderating the server.
+
+🪡 **Utility**
+Commands for different purposes.
+
+🎪 **Fun**
+Fun commands that are entertaining.
+
+🚧 **Embed Builder**
+Commands related to the Wisdom Embed Builder
+
+📜 **Server Data**
+Variables for the server. Made for Server Devs or the Owner to show some extra info.
+
+👤 **User Commands**
+Commands related to the user or members.
+]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+
+$newSelectMenu[help;1;1;Choose a help option.]
+$addSelectMenuOption[help;Moderation;first-option;View Moderation Commands;no;🛡️]
+$addSelectMenuOption[help;Utility;second-option;View Utility Commands;no;🪡]
+$addSelectMenuOption[help;Fun;third-option;View Fun Commands;no;🎪]
+$addSelectMenuOption[help;Embed Builder;fourth-option;View Embed Builder Commands;no;🚧]
+$addSelectMenuOption[help;User Commands;sixth-option;View User Commands;no;👤]
+$addSelectMenuOption[help;Server Data (For Devs);fifth-option;View Server Data;no;📜]

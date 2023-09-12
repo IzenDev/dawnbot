@@ -1,0 +1,6 @@
+$nomention
+$newModal[author-modal.embedbuilder;Author Settings]
+$addTextInput[author-modal.author.embedbuilder;short;Embed Author;1;150;no;;TThe author for the Embed]
+$addTextInput[author-modal.authoricon.embedbuilder;short;Embed Author Icon;1;150;no;;The icon for the author (Requires an author)]
+$addTextInput[author-modal.authorurl.embedbuilder;short;Embed Author URL;1;500;no;;The URL when clicking on the Author Name]
+

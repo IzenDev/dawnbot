@@ -1,0 +1,13 @@
+$nomention
+$reply
+$if[$random[1;12]==10]
+   10/10 🍑
+$elseif[$random[1;12]==11]
+   🍑🍑🍑🍑🍑🍑🍑🍑🔥🔥🔥🔥🔥🔥GYYYYYYATTTTTTTT🔥🔥🔥🔥🔥🥵🥵🥵🥵🥵🥵🥵🥵🥵
+$elseif[$authorID==$botOwnerID]
+   The owner has the best gyatt (Level 69)
+$elseif[$authorID==788215998380900363]
+   Level 0 (L iz u bad low level gyatt)
+$else
+   Level $random[1;11]
+$endif

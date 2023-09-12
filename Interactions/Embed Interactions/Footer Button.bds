@@ -1,0 +1,5 @@
+$nomention
+$newModal[footer-modal.embedbuilder;Footer Settings]
+$addTextInput[author-modal.footer.embedbuilder;short;Embed Footer;1;150;no;;The footer to add the the embed!]
+$addTextInput[author-modal.footericon.embedbuilder;short;Embed Footer Icon;1;500;no;;The icon for the author (Requires a footer)]
+$addTextInput[author-modal.timestamp.embedbuilder;short;Embed Timestamp;1;3;no;;(Use "yes" or "no" for choosing)]

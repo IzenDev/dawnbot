@@ -1,0 +1,9 @@
+$nomention
+$reply
+$argsCheck[1>;❌ Please mention a user!]
+$title[User Avatar]
+$description[Here is $username[$mentioned[1]]'s Avatar:]
+$userAvatar[$mentioned[1]]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

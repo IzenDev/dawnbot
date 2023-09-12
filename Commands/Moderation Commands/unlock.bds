@@ -1,0 +1,9 @@
+$nomention
+$reply
+$onlyPerms[managechannels;:x: This is only for Staff.]
+$editChannelPerms[$channelID;$guildID;+sendmessages]
+$title[Channel Unlocked]
+$description[🔓 You have unlocked <#$channelID>]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

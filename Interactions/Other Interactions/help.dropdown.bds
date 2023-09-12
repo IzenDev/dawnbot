@@ -1,0 +1,119 @@
+$nomention
+
+$if[$message==first-option]
+$title[Moderation Commands]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$description[
+**Main Commands**
+`ban` - Bans a user
+`kick` - Kicks a user
+`timeout` - Untimeout a user
+`unban` - Unban a user
+`untimeout` - Removes a user timeout.
+`lock` - Locks the Channel
+`unlock` - Unlocks the Channel.
+
+**Extra Mod Commands**
+`autorole` - Gives a set role to a newly joined user.
+`disableautorole` - Disables the feature above
+`members` - Shows the member count of the server.
+]
+$endif
+
+$if[$message==second-option]
+$title[Staff Utility Commands]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$description[
+**Setup Commands (For Admins)**
+`setwelcome` - Sets the server's welcome channel.
+`ticketsetup` - Sends the embed so users can open tickets.
+
+`staffrole` - This sets the main staff role for the server. (This user is pinged in tickets, etc.)
+`unset-staffrole` - Unsets the staff role (If you want to.)
+
+`set-suggestion` - Sets the suggestion channel for Suggestions to be sent to.
+
+`jointest` - Sends a fake welcome message to test if the Welcome System is working and is setup.
+
+**Other Utility Commands**
+`invite` - Shows some bot invites for support, etc.
+`botinfo` - Shows Info about the Bot
+`serverinfo` - Shows Info about the current server
+`ticket-add` - Adds someone to the ticket.
+`ticket-remove` - Removes someone from the ticket.
+`requeststaff-disable` - Disabled the "Request Staff" button
+`requeststaff-enable` - Enables the "Request Staff" button.
+`purge` - Mass message deletions
+`ping` - Shows the Bot Ping
+`test` - Sends a Testing Embed Message
+`servericon` - Sends the server icon
+`avatar` - Shows the mentioned user's avatar.
+`suggest` - Sends a suggestion to the suggestions channel.
+`colors` - Shows a list of colors that Wisdom supports. **(WRITTEN AS SHOWN)**
+]
+$endif
+
+$if[$message==third-option]
+$title[Fun Commands]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$description[
+**Weird/Fun Commands** (Mostly ideas by <@788215998380900363>)
+
+`8ball` - Gives you a random answer, like an 8ball
+`random` - Sends a random number between 1-10000
+`code` - Gives a random code between 1-10
+`cookies` - CCookeis (I guess)
+`milk` - Milk (I guess)
+`crazy` - Crazy (I guess)
+`gyatt` - Sends a random number between 1-10]
+$endif
+
+$if[$message==fourth-option]
+$title[Embed Builder Commands]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$description[
+**Main Commands**
+`embed` - Starts the embed building process.
+]
+$endif
+
+$if[$message==fifth-option]
+$title[$serverName[$guildID] Data]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$async[fetch-var]
+$description[
+🚪 Set Welcome Channel: 
+<#$getServerVar[welcome]>
+
+🏓 Set Staff Ping: 
+<@&$getServerVar[ticketping]>
+
+🚘 AutoRole:
+<@&$getServerVar[autorole]>
+
+📝 Suggestion Channel
+<#$getServerVar[suggestion.channel]>
+]
+$endif
+$endasync
+
+$if[$message==sixth-option]
+$title[User Commands]
+$footer[$getServerVar[wisdom.footer]]
+$footerIcon[$getServerVar[wisdom.footer.icon]]
+$color[$getServerVar[wisdom.color]]
+$description[
+`?setbio` - Sets your profile bio
+`?setcolor` - Sets your profile color **(Use `?colors` for a list of colors to use.)**
+`?profile` - Shows your or another user profile]
+$endif

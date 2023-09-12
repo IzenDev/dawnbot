@@ -1,0 +1,29 @@
+$nomention
+$reply
+$title[Server Info]
+$description[## **Server Info ($serverName[$guildID])**
+
+🧑 Members: $membersCount
+
+🗓️ Server Creation Date: $creationDate[$guildID]
+
+🔒 Server Verification Level: $serverVerificationLvl
+
+👑 Server Owner: $username[$serverOwner[$guildID]]
+
+🆔 Guild ID: $guildID
+
+🖇️ Roles: $roleCount
+
+📅 Todays Date: $date
+
+🔄️ Channel Count: $channelCount
+
+🚀 Boost Count: $boostCount[$guildID]]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+
+
+
+

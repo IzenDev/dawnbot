@@ -1,0 +1,28 @@
+$nomention
+$reply
+$title[Bot Info]
+$description[## **Bot Info**
+
+🤖 Bot Name: $username[$botID]
+
+🥏 Bot Discrim: `$discriminator[$botID]`
+
+👑 Bot Owner: $username[$botOwnerID]
+
+📆 Creation Date: `$creationDate[$botID]`
+
+🆔 Bot ID: `$botID`
+
+🆔 Bot Node ID: `$botNode`
+💾 Node Version: `$nodeVersion`
+
+⬆️ Bot Uptime: `$uptime`
+
+🔄️ Server Count: `$serverCount`
+
+📕 Library: `$scriptLanguage`
+
+🏓 Bot Ping: `$ping`]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

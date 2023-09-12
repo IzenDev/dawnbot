@@ -1,0 +1,7 @@
+$nomention
+$reply
+$title[Server IP]
+$description[The server IP is **$getServerVar[mcserverip]**]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

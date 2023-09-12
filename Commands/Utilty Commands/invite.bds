@@ -1,0 +1,9 @@
+$nomention
+$reply
+$title[Invites]
+$description[Add me to your own server using this invite link :link::https://dsc.gg/wisdombot
+
+🆘 Get bot support for Wisdom here: https://discord.gg/Nm6VqHuPnu]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

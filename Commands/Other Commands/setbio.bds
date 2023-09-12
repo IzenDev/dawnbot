@@ -1,0 +1,12 @@
+$nomention
+$reply
+$argsCheck[1>;:x: Please set a bio message!]
+$setUserVar[userBio;$message]
+$title[Bio Updated]
+$description[✅ You have set your profile bio to:
+```
+$message
+```]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]

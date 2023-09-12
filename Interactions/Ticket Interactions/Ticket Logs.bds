@@ -1,0 +1,10 @@
+$nomention
+$reply
+$ephemeral
+$title[Error]
+$description[**This is currently unavailable!**
+Check back later for updates]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$removeButtons

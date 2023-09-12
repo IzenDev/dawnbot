@@ -8,6 +8,7 @@ If you would like to, invite Wisdom [**HERE**](https://dsc.gg/wisdombot)
 
 ## Other Links
 - Support Server [**HERE**](https://discord.gg/Nm6VqHuPnu)
+- Documentation [**HERE**]()
 
 ## Features
 Wisdom has a multitude of cool features! Here are just a few:

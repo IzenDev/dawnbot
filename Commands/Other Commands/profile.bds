@@ -1,4 +1,19 @@
 $nomention
 $reply
 $argsCheck[1>;:x: Please mention a user!]
-$sendEmbedMessage[$channelID;;$username[$mentioned[1]]'s Profile;;$getUserVar[userBio;$mentioned[1]];$getUserVar[userColor;$mentioned[1]];$username[$mentioned[1]];$userAvatar[$mentioned[1]];;;$userAvatar[$mentioned[1]];;;no]
+$sendEmbedMessage[$channelID;
+;
+$username[$mentioned[1]]'s Profile;
+;
+$getVar[userBio;$mentioned[1]];
+$getVar[userColor;$mentioned[1]];
+$username[$mentioned[1]];
+$userAvatar[$mentioned[1]];
+;
+;
+$userAvatar[$mentioned[1]];
+;
+yes;
+no]
+
+

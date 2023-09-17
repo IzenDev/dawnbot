@@ -1,11 +1,19 @@
 $nomention
 $defer
+$embedSuppressErrors[Error;You can only purge `99` messages at a time! Please enter a lower number!;$getVar[wisdom.color];;$getVar[wisdom.footer];$getVar[wisdom.footer.icon]]
+
+
 $onlyAdmin[❌ This is only for Admins.]
-$deletecommand
 $argsCheck[>1;Please provide a number of messages to delete! Use `?purge <1-100>`]
+
+$async[purge]
 $clear
-$title[Message Purge]
-$description[<@$authorID> purged $message messages!]
-$color[$getVar[wisdom.color]]
-$footer[$getVar[wisdom.footer]]
-$footerIcon[$getVar[wisdom.footer.icon]]
+$endasync
+$deletecommand
+
+$await[purge]
+
+$var[msg;$sendEmbedMessage[$channelID;;Message Purge;;<@$authorID> purged $message messages!;$getVar[wisdom.color];;;$getVar[wisdom.footer];$getVar[wisdom.footer.icon];;;yes;yes]]
+
+$replyIn[4s]
+$deleteMessage[$channelID;$var[msg]]

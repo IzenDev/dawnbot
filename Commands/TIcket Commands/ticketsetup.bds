@@ -1,9 +1,12 @@
 $nomention
 $defer
 $onlyAdmin[❌ This is only for Admins]
+$async[message]
 $sendEmbedMessage[$channelID;;Tickets & Support;;Below this message is a button, this button can be used to open a ticket, 
 where you will be prompted to a private channel, where you can speak with staff.
 
-Please include many details when you are prompted with your ticket.;#e05632;;;Wisdom - A multipurpose utility bot.;https://cdn.discordapp.com/attachments/1142195573638844575/1146279850575937586/widsombotNEW.png;;;;no]
+Please include many details when you are prompted with your ticket.;$getVar[wisdom.color];;;$getVar[wisdom.footer];$getVar[wisdom.footer.icon];;;;no]
+$endasync
 
+$await[message]
 $addButton[no;ticket.button.open;Open Ticket;secondary;no;🎫]

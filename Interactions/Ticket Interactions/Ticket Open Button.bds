@@ -30,6 +30,6 @@ $await[buttons]
 $nomention
 $ephemeral 
 $removeButtons
-$title[$username - Ticket Created]
+$title[$displayName[$authorID] - Ticket Created]
 $color[#e05632]
-$description[Your ticket has been created in <#$var[channel]>]
+$description[Your ticket has been created. View it at <#$var[channel]>]

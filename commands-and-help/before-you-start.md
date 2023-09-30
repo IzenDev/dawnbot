@@ -1,6 +1,5 @@
 ---
 description: Other small information you might need to know!
-coverY: 0
 ---
 
 # 🛑 Before You Start

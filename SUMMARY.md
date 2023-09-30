@@ -12,3 +12,8 @@
 * [‼ Moderation](commands-and-help/moderation.md)
 * [🎫 Tickets](commands-and-help/tickets.md)
 * [🚠 Fun (or Useless)](commands-and-help/fun-or-useless.md)
+
+## 🎱 Other
+
+* [🎬 Terms of Service](other/terms-of-service.md)
+* [🔓 Privacy Policy](other/privacy-policy.md)

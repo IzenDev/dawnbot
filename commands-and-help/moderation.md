@@ -28,13 +28,14 @@ layout:
 
 ## Main Moderation Commands
 
-* `ban` - Bans a user from the Current server.
-* `kick` - Kicks a user from the current server.
-* `timeout` - Times out a user. (Max 28 Days)
-* `unban` - Removes the ban from a user using their username.
-* `untimeout` - Removes the timeout from the mentioned user.
-* `lock` - Locks the current channel. (Stops @everyone from sending messages)
-* `unlock` - Unlocks the current channel.
+* `/ban <user> <reason>` - Bans a user from the Current server.
+* `/kick <user> <reason>` - Kicks a user from the current server.
+* `/timeout <user> <length> <reason>` - Times out a user. (Max 28 Days)
+* `/untimeout <user>` - Removes the timeout from the mentioned user.
+* `/lock_channel` - Locks the current channel. (Stops @everyone from sending messages)
+* `/unlock_channel` - Unlocks the current channel.
+* `/addrole <role> <user>` - Adds a role to the user
+* `/removerole <role> <user>` - Removes a role from the user.
 
 ***
 

@@ -1,19 +1,88 @@
 $nomention
-$reply
-$onlyPerms[moderatemembers;❌ This is only for Staff.]
-$argsCheck[>2;❌ Please set a time! (Max 28 Days)! Use `?timeout <time> <user>`!]
-$suppressErrors
-$if[$isAdmin[$mentioned[1]]==true]
-    $title[Error]
-    $description[You cannot timeout this user!]
-    $color[$getVar[wisdom.color]]
-    $footer[$getVar[wisdom.footer]]
-    $footerIcon[$getVar[wisdom.footer.icon]]
+$onlyPerms[moderatemembers;:x: You are not allowed to run this command.]
+
+$if[$isTimedOut[$message[user]]==false]
+
+$try
+
+$async[timeout]
+$timeout[$message[length];$message[user]]
+$endasync
+
+$await[timeout]
+$title[$getVar[check] User Timed Out!]
+$description[New Timeout]
+$addField[$getVar[member_icon] User:;<@$message[user]>;yes]
+$addField[$getVar[card_icon] Reason:;$message[reason];yes]
+$addField[:clock: Duration:;$message[length];yes]
+$addField[$getVar[info_icon] Responsible Moderator:;<@$authorID>;yes]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];yes]
+$addField[Error Code:;$error[message];yes]
+$addField[Location:;$error[column]:$error[row];yes]
+$color[E74C3C]
+
+$endtry
+
+$elseif[$isTimedOut[$message[user]==true]]
+
+$try
+
+$title[$getVar[warning] Error]
+$description[This user is already timed out! Please wait until their timeout ends and make sure you have the correct user.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];yes]
+$addField[Error Code:;$error[message];yes]
+$addField[Location:;$error[column]:$error[row];yes]
+$color[E74C3C]
+
+$endtry
+
+$elseif[$isAdmin[$message[user]]==true]
+
+$try
+
+$title[$getVar[warning] Error]
+$description[This user is an admin. You are not allowed to time out admins!]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];yes]
+$addField[Error Code:;$error[message];yes]
+$addField[Location:;$error[column]:$error[row];yes]
+$color[E74C3C]
+
+$endtry
+
 $else
-    $timeout[$message[1]]
-    $title[User Timeout]
-    $description[✅ You have timed out <@$mentioned[1]>!]
-    $color[$getVar[wisdom.color]]
-    $footer[$getVar[wisdom.footer]]
-    $footerIcon[$getVar[wisdom.footer.icon]]
+
+$title[$getVar[warning] Error]
+$description[There was an error trying to run this command.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
 $endif

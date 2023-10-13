@@ -1,10 +1,62 @@
 $nomention
-$reply
-$argsCheck[>1;:x: Please mention a user!]
-$onlyPerms[moderatemembers;❌ This is only for Staff.]
-$untimeout[]
-$title[User Timeout]
-$description[<@$mentioned[1]>'s timeout has been removed.]
-$color[$getVar[wisdom.color]]
+$onlyPerms[moderatemembers;:x: You are not allowed to run this command.]
+
+$if[$isTimedOut[$message[user]]==true]
+
+$try
+
+$async[untimeout]
+$untimeout[$message[user]]
+$endasync
+
+$await[untimeout]
+$title[$getVar[check] User Timeout Removed]
+$description[<@$message[user]>'s timeout has been removed.]
 $footer[$getVar[wisdom.footer]]
 $footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];yes]
+$addField[Error Code:;$error[message];yes]
+$addField[Location:;$error[column]:$error[row];yes]
+$color[E74C3C]
+
+$endtry
+
+$elseif[$isTimedOut[$message[user]==false]]
+
+$try
+
+$title[$getVar[warning] Error]
+$description[This user does not have a timeout!]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];yes]
+$addField[Error Code:;$error[message];yes]
+$addField[Location:;$error[column]:$error[row];yes]
+$color[E74C3C]
+
+$endtry
+
+$else
+
+$title[$getVar[warning] Error]
+$description[There was an error trying to run this command.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$endif

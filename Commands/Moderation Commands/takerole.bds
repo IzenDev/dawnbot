@@ -1,9 +1,56 @@
 $nomention
-$reply
-$onlyPerms[manageroles;❌This is only for Staff.]
-$takeRole[$mentionedRoles[<]]
-$title[Role Taken]
-$description[ The role <@&$mentionedRoles[1]> have been removed from <@$mentioned[1]>]
-$color[$getVar[wisdom.color]]
+$onlyAdmin[:x: You do not have the permissions to run this command.]
+
+$if[$hasRole[$message[user];$message[role]]==true]
+
+$try
+
+$async[take_role]
+$roleGrant[$message[user];-$message[role]]
+$endasync
+
+$await[take_role]
+$title[$getVar[check] Took $roleName[$message[role]] from $displayName[$message[user]]]
+$description[<@$message[user]> was removed from the role <@&$message[role]>.
+
+Responsible Moderator: <@$authorID>]
 $footer[$getVar[wisdom.footer]]
 $footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];no]
+$addField[Error Code:;$error[message];no]
+$addField[Location:;$error[column]:$error[row];no]
+$color[#ff3636]
+
+$endtry
+
+$elseif[$hasRole[$message[user];$message[role]]==false]
+
+$try
+
+$title[$getVar[warning] Error!]
+$description[The user does not have that role! Please try a different role or a different user.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];no]
+$addField[Error Code:;$error[message];no]
+$addField[Location:;$error[column]:$error[row];no]
+$color[#ff3636]
+
+$endtry
+
+$endif
+

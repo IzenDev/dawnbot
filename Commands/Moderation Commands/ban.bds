@@ -1,18 +1,96 @@
 $nomention
-$reply
-$onlyPerms[ban;❌This is only for Staff.]
-$argsCheck[1>;:x: Please mention a user to ban!]
-$if[$username==$isBanned[$mentioned[1]]]
-    $title[Error]
-    $description[ This user is not banned or is already banned!]
-    $color[$getVar[wisdom.color]]
-    $footer[$getVar[wisdom.footer]]
-    $footerIcon[$getVar[wisdom.footer.icon]]
+$onlyPerms[ban;:x: You do not have the permissions to run this command.]
+
+$if[$isBanned[$message[user]]==false]
+
+$try
+
+$async[ban]
+$banID[$message[reason];$message[user]]
+$endasync
+
+$await[ban]
+$title[$getVar[check] User Banned]
+$description[New User Banned]
+$addField[$getVar[member_icon] User:;<@$message[user]>;yes]
+$addField[$getVar[card_icon] Reason:;- $message[reason];yes]
+$addField[$getVar[info_icon] Responsible Moderator:;<@$authorID>;yes]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];no]
+$addField[Error Code:;$error[message];no]
+$addField[Location:;$error[column]:$error[row];no]
+$color[#ff3636]
+
+$endtry
+
+$elseif[$isBanned[$message[user]==true]]
+
+$try
+
+$title[$getVar[warning] Error]
+$description[This user is already banned. Please make sure you are trying to ban the correct user!]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];no]
+$addField[Error Code:;$error[message];no]
+$addField[Location:;$error[column]:$error[row];no]
+$color[#ff3636]
+
+$endtry
+
+$elseif[$isAdmin[$message[user]]==true]
+
+$try
+
+$title[$getVar[warning] Error]
+$description[This user is an admin. You are not allowed to ban admins.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
+$catch
+$title[$getVar[warning] Error]
+$description[There was an error trying to run the command. Please use the following as a guide:]
+
+$addField[Function:;$error[command];no]
+$addField[Error Code:;$error[message];no]
+$addField[Location:;$error[column]:$error[row];no]
+$color[#ff3636]
+
+$endtry
+
+$elseif[$message[user]==$botOwnerID]
+
+$title[$getVar[warning] Error]
+$description[There was an error trying to run this command.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
 $else
-     $ban[$mentioned[1]]
-     $title[User Banned]
-     $description[ <@$mentioned[1]> has been banned from $serverName[$guildID]]
-     $color[$getVar[wisdom.color]]
-     $footer[$getVar[wisdom.footer]]
-     $footerIcon[$getVar[wisdom.footer.icon]]
+
+$title[$getVar[warning] Error]
+$description[There was an error trying to run this command.]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$color[$getVar[wisdom.color]]
+$addTimestamp
+
 $endif

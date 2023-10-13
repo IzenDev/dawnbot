@@ -1,0 +1,11 @@
+$nomention
+$onlyPerms[managechannels;:x: You do not have the permissions to run this command.]
+
+$editChannelPerms[$channelID;$guildID;-sendmessages]
+$title[$getVar[security_lock_icon] Channel Locked]
+$description[<#$channelID> has been locked.]
+$addField[$getVar[info_icon] Responsible Moderator:;<@$authorID>;yes]
+$color[$getVar[wisdom.color]]
+$footer[$getVar[wisdom.footer]]
+$footerIcon[$getVar[wisdom.footer.icon]]
+$addTimestamp
